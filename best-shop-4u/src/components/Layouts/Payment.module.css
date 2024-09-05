@@ -1,0 +1,36 @@
+.back {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.paymentControl label {
+  display: block;
+  margin: 0.4rem 1rem;
+}
+
+.paymentControl input {
+  margin: 0.4rem 1rem;
+  padding: 0.3rem 1rem;
+}
+
+.paymentControl input[type="text"] {
+  width: 25rem;
+}
+.actions {
+  width: 95%;
+  text-align: right;
+}
+
+.actions button {
+  padding: 0.6rem 1.2rem;
+  font-size: 15px;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: 4px;
+  margin-right: 3rem;
+}
+.actions button:hover {
+  background: linear-gradient(to bottom left, grey, white);
+  box-shadow: 2px 2px 2px #333, 4px 4px 4px #333;
+}

@@ -1,0 +1,19 @@
+.orderList {
+  max-height: 10rem;
+  overflow: auto;
+  border-bottom: 1px solid #000;
+}
+
+.orderAmount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+}
+
+.orderAmount span {
+  margin: 1rem;
+}
+.orderAmount span:nth-child(even) {
+  font-weight: bold;
+}

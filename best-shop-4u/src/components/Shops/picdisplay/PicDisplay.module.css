@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-display-image {
+  position: relative;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+.slides img {
+  margin-top: 10px;
+  width: 100%;
+  height: 50vh;
+  border-radius: 5px;
+  box-shadow: 15px 15px 25px var(--border-color);
+  z-index: 0;
+}
+.front-display-image .next {
+  position: absolute;
+  top: 23vh;
+  right: 0;
+  align-items: center;
+  color: #fff;
+  padding: 0.5rem;
+  border: 1px transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #41ef;
+  z-index: 1;
+}
+.front-display-image .prev {
+  position: absolute;
+  top: 23vh;
+  left: 0;
+  z-index: 1;
+  padding: 1rem;
+  border: 1px transparent;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.help button {
+  position: fixed;
+  bottom: 25px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: navajowhite;
+  background: linear-gradient(to bottom left, grey, white);
+  color: #000;
+  cursor: pointer;
+  z-index: 50;
+}
+.help {
+  color: #000;
+}
+
+.help::before {
+  position: fixed;
+  content: "";
+  bottom: 50px;
+  left: 65px;
+
+  width: 0px;
+  height: 0px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #41ef;
+  transform: translateY(10px);
+  transition: all 0.5s ease-in-out;
+  z-index: 40;
+}
+
+.help:hover:before {
+  transform: translateY(-30px);
+}
+
+.help button {
+  text-decoration: none;
+}
+.help button:hover {
+  box-shadow: 2px 2px 2px #333, 4px 4px 4px #333;
+}
+.help button i {
+  font-size: 20px;
+  color: #000;
+}
+
+.container .chatwithus {
+  position: fixed;
+  width: 250px;
+  bottom: 85px;
+  left: 40px;
+
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 8px;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.container .help:hover .chatwithus {
+  transform: scale(1);
+}
+
+.chatwithus a {
+  text-decoration: none;
+  color: #41ef;
+}
+
+.myBtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background: linear-gradient(to left bottom, grey, white);
+  border-radius: 50%;
+  bottom: 35px;
+  right: 25px;
+  z-index: 10;
+  border: 1px solid #333;
+  cursor: pointer;
+  text-align: center;
+}
+.myBtn:hover {
+  box-shadow: 0 0 2px #333, 4px 4px 4px #333;
+}

@@ -1,0 +1,10 @@
+.orderItems {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 3rem;
+}

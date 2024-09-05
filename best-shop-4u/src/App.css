@@ -1,0 +1,11 @@
+*:root {
+  --text-light: #fff;
+  --text-dark: #000;
+}
+
+body {
+  background: url("../public/Asset/background.jpg");
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}

@@ -1,0 +1,79 @@
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input label {
+  transform: translateY(-29px);
+  margin: 0.2rem;
+  margin-left: 1rem;
+  font-size: 15px;
+  z-index: 10;
+  color: #000;
+  transition: transform 0.5s ease-in;
+}
+.input input {
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  padding: 0.6rem;
+  outline: none;
+  margin: 0.2rem;
+  border: none;
+  background: transparent;
+  color: #000;
+  outline: none;
+  z-index: 1;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 15px;
+}
+
+.input > :is(input:focus, .has-value) ~ label {
+  font-size: 15px;
+  transform: translateY(-58px);
+  margin-top: 10px;
+}
+
+.input .error {
+  border: 1px solid red;
+  animation: animate 0.1s;
+  box-shadow: 1px 1px 1px red;
+}
+
+@keyframes animate {
+  0% {
+    margin-left: 0.3rem;
+  }
+  25% {
+    margin-left: 0;
+  }
+
+  50% {
+    margin-left: -0.3rem;
+  }
+
+  100% {
+    margin-left: 0.2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .input label {
+    font-size: 22px;
+    transform: translateY(-36px);
+  }
+
+  .input input {
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+  }
+
+  .input > :is(input:focus, .has-value) ~ label {
+    font-size: 22px;
+    transform: translateY(-74px);
+  }
+}

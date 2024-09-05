@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 599px) {
+  .container {
+    width: 100%;
+  }
+}

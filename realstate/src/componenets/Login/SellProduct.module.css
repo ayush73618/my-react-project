@@ -1,0 +1,76 @@
+.centered-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #eee;
+}
+
+.form-container {
+  max-width: 500px;
+  height: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #888;
+}
+
+.sellButton {
+  padding: 10px;
+  background-color: #999;
+  color: #eee;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+/* .input {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.input input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.input label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #f9f9f9;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+.input input:focus + label,
+.input.has-value + label {
+  top: -20px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+.input.error input {
+  border-color: #ff4d4f;
+}
+
+.input.error label {
+  color: #ff4d4f;
+} */

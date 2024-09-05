@@ -1,0 +1,12 @@
+.display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem;
+  justify-content: space-between;
+}
+
+.display span {
+  text-align: right;
+}

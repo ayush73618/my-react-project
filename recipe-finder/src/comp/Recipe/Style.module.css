@@ -1,0 +1,94 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  background: linear-gradient(to top left, darkblue, darkgrey);
+  font-weight: 600;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.display img {
+  width: 500px;
+  height: 400px;
+}
+
+.backDrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.9);
+  z-index: 99;
+  opacity: 0.9;
+}
+
+.navbar ul li {
+  margin-left: 1rem;
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #eee;
+  font-weight: 800;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  color: #eee;
+}
+
+.navbar ul li button {
+  margin-top: 8px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  background-color: #eee;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 20px;
+  opacity: 1;
+  z-index: 100;
+  box-shadow: 4px 4px 12px #41ef;
+  animation: slide-down 1s ease-in-out;
+  overflow: scroll;
+}
+
+.display a {
+  text-decoration: none;
+  background-color: #333;
+  color: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translate(-40%, -40%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%, -50%);
+  }
+}

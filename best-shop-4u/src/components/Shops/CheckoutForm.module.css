@@ -1,0 +1,46 @@
+.form {
+  margin: 1rem 1rem;
+  height: 25rem;
+  overflow: auto;
+}
+
+.form input:focus {
+  color: #fff;
+  outline: gray;
+  background-color: #000;
+}
+
+.control label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.control input {
+  width: 15rem;
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+}
+.actions {
+  width: 95%;
+  text-align: right;
+  margin: 1rem 0.7rem;
+}
+.actions button {
+  padding: 0.6rem 1.2rem;
+  font-size: 15px;
+  border: 1px solid #333;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: 4px;
+  margin-right: 3rem;
+}
+.actions button:hover {
+  background: linear-gradient(to bottom left, grey, white);
+  box-shadow: 2px 2px 2px #333, 4px 4px 4px #333;
+}
+
+.error input {
+  border: 1px solid red;
+  box-shadow: 2px 2px 2px red;
+}
